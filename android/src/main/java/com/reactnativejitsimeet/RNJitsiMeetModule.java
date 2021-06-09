@@ -71,6 +71,7 @@ public class RNJitsiMeetModule extends ReactContextBaseJavaModule {
                             .setFeatureFlag("lobby-mode.enabled",false)
                             .setFeatureFlag("toolbox.alwaysVisible",true)
                             .setFeatureFlag("meeting-name.enabled",false)
+                            .setFeatureFlag("fullscreen.enabled",false)
                             .setUserInfo(_userInfo)
                             .build();
                     mJitsiMeetViewReference.getJitsiMeetView().join(options);
@@ -119,6 +120,7 @@ public class RNJitsiMeetModule extends ReactContextBaseJavaModule {
                             .setFeatureFlag("lobby-mode.enabled",false)
                             .setFeatureFlag("toolbox.enabled",false)
                             .setFeatureFlag("meeting-name.enabled",false)
+                            .setFeatureFlag("fullscreen.enabled",false)
                             .setUserInfo(_userInfo)
                             .build();
                     mJitsiMeetViewReference.getJitsiMeetView().join(options);
